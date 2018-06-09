@@ -152,7 +152,7 @@ function print () {
     ui: false
   })
 
-  pdf.create(html, options).toFile('resume.pdf', function (err, res) {
+  pdf.create(html, options).toFile('_build/resume.pdf', function (err, res) {
     if (err) return console.log(err)
     server.exit()
     console.log('\nPDF generation complete!\n')
