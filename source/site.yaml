@@ -1,18 +1,18 @@
 # SEO / <meta> tag information
-title: The Resume of Thomas A. Anderson (The One)
-description: Prophesized by The Oracle to be The One, Thomas A. Anderson freed humanity from the Matrix and ended the Machine War.
+title: The Resume of Daniel Lewis
+description: Software Engineer with 5 years professional experience.
 # theme color for header, borders, section headings
 # For best results, choose a color that has a color ratio of at least 3.5
 # against white. Otherwise, all text etc is set to black to preserve readability
 # @link http://leaverou.github.io/contrast-ratio/
 theme: '#0074D9'
 # of work experiences to show
-jobs: 3
+jobs: 5
 # of educational experiences to show
-schools: 1
+schools: 0
 # show 'References available' link in footer
 references: true
 # Remove theme color on print
 printstyles: true
 # Show promo link under resume (you probably want to set this to false)
-promolink: true
+promolink: false
