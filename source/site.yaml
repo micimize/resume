@@ -10,7 +10,7 @@ theme: '#0074D9'
 jobs: 5
 # of educational experiences to show
 schools: 0
-projects: 2
+projects: 3
 # show 'References available' link in footer
 references: true
 # Remove theme color on print
