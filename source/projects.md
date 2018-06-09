@@ -1,4 +1,4 @@
 ---
-title: Education
+title: Projects
 layout: collection.pug
 ---

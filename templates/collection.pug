@@ -9,6 +9,9 @@ block content
   else if title == 'Education'
     for school in collections.education
       +experience(school)
+  else if title == 'Projects'
+    for project in collections.projects
+      +experience(project)
 
   +footer
     p: +link('Back to Full Resume', '/')

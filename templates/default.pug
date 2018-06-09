@@ -31,6 +31,14 @@ body.bg-white.bg-light-gray-page.bg-white-p.dark-gray(class= process.env.NODE_EN
               - if (collections.education[i])
                 +experience(collections.education[i])
 
+        if site.projects > 0
+          +section-title
+            +accent-link('Projects', '/projects')
+          +section
+            - for (var i = 0; i < site.projects; i++)
+              - if (collections.projects[i])
+                +experience(collections.projects[i])
+
         if person.proficiencies
           +section
             +left-column

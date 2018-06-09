@@ -81,3 +81,30 @@ prose:
           label: 'Location'
           placeholder: 'Capitol City, USA'
           type: 'text'
+    'source/projects':
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Name'
+          placeholder: 'Rosebud'
+          type: 'text'
+      - name: 'url'
+        field:
+          element: 'text'
+          label: 'Institution website'
+          placeholder: 'http://owenpattersonhs.edu'
+          type: 'text'
+      - name: 'startDate'
+        field:
+          element: 'text'
+          label: 'Start Date'
+          help: 'YYYY-MM-DD'
+          placeholder: '1985-08-10'
+          type: 'text'
+      - name: 'endDate'
+        field:
+          element: 'text'
+          label: 'End Date'
+          help: 'leave blank for current'
+          placeholder: '1989-05-30'
+          type: 'text'
