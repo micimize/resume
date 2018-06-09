@@ -3,14 +3,14 @@ name: Daniel Lewis
 email: daniel.lewis.software.engineer@gmail.com
 location: Austin, TX
 # Header introduction / mission statement
-intro: "\n\nI'm a software engineer with 5 years professional experience. I'm available for software consulting."
+intro: "I'm a software engineer with 5 years professional experience. I'm available for software consulting."
 #for Twitter cards:
 # Removing all proficiencies will remove the section from the resume
 proficiencies:
   # - list item
   - Front-end web development
   - Javascript and Typescript
-  - React.js and the React ecosystem (Redux, React Router, etc.)
+  - React.js
   - Rapid prototyping
   - Low level, native applications
   - C/C++/Rust
