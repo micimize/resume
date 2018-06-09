@@ -3,16 +3,16 @@
 mixin experience(exp)
   +section
     //- Position
-    h3.f3.mb2.mb0-p.fw6= exp.title
+    h3.f3.mb2.mb0-p.fw6
+      if exp.url
+        +link(exp.title, exp.url)
+      else
+        = exp.title
     //- Metadata
     +left-column
       ul.list.ml0.pl0.f5.mt1.fw2
         //- Place of Work
-        li.fw5
-          if exp.url
-            +link(exp.subtitle, exp.url)
-          else
-            = exp.subtitle
+        li.fw5= exp.subtitle
         //- Time
         li
           time(datetime=moment.utc(exp.startDate))= moment.utc(exp.startDate).format("MMM YYYY")

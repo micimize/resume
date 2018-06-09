@@ -18,5 +18,5 @@ proficiencies:
 # Links to include in header
 links:
   # text: http://link.com
-  '@helveticascenario': https://github.com/helveticascenario
-  'linkedin': https://www.linkedin.com/in/daniel-lewis-7a136545/
+  'GitHub': https://github.com/helveticascenario
+  'LinkedIn': https://www.linkedin.com/in/daniel-lewis-7a136545/
