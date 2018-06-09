@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Software Engineer
 subtitle: Snapchat
 url: 'https://www.snapchat.com/'
