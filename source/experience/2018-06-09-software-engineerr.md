@@ -1,6 +1,6 @@
 ---
 published: false
-title: Software Engineerr
+title: Buzzpoints
 ---
 ## A New Post
 
