@@ -1,7 +1,6 @@
 ---
 published: true
-title: ''
-subtitle: Snapchat
+title: Snapchat
 url: 'https://www.snapchat.com/'
 startDate: '2014-07-28'
 endDate: '2015-06-15'
