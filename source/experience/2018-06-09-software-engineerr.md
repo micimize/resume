@@ -1,7 +1,6 @@
 ---
 published: false
 title: Buzzpoints
-subtitle: Buzzpoints
 url: 'https://www.buzzpoints.com/'
 startDate: '2013-05-01'
 endDate: '2014-02-01'
