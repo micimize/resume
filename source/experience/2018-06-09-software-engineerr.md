@@ -1,7 +1,10 @@
 ---
 published: false
 title: Buzzpoints
+subtitle: Buzzpoints
+url: 'https://www.buzzpoints.com/'
+startDate: '2013-05-01'
+endDate: '2014-02-01'
+location: 'Austin, TX, USA'
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Part of a team of engineers doing Java/Spring backend and a Backbone/Angular front end. Wrote the suite of front end unit tests (Selenium) and led a reengineering of the company’s email marketing system using Mailchimp.
