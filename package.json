@@ -14,7 +14,7 @@
     "pdf": "NODE_ENV=print npm run build && npm run build",
     "test": "standard && stylelint css/*.css",
     "deploy": "gh-pages -d _build -b master",
-    "publish": "NODE_ENV=print npm run build && npm run build:minify && npm run deploy"
+    "publish": "NODE_ENV=print npm run build && npm run build:minify && mv resume.pdf _build/ && npm run deploy"
   },
   "repository": {
     "type": "git",
