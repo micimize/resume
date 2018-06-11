@@ -6,4 +6,4 @@ startDate: '2017-05-01'
 endDate: '2017-09-20'
 location: 'Austin, TX, USA'
 ---
-As an independant contractor I built out a set of reports within the system social dashboard. Through these reports, the users of the system social platform can see detailed metrics on the effectiveness of their campaigns. Technologies used include jQuery and d3.
+I built out a set of reports within the system social dashboard. Through these reports, the users of the system social platform can see detailed metrics on the effectiveness of their campaigns. Technologies used include jQuery and d3.
