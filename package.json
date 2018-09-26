@@ -1,5 +1,6 @@
 {
-  "name": "daniel-lewis-resume",
+  "name": "michael-joseph-rosenthal-resume",
+  "private": true,
   "version": "0.0.7",
   "description": "A resume generator, built with Metalsmith",
   "main": "build.js",
@@ -19,8 +20,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HelveticaScenario/HelveticaScenario.github.io.git"
-  },
-  "keywords": [
+  }, "keywords": [
     "metalsmith",
     "resume",
     "cv",

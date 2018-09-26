@@ -1,22 +1,32 @@
-name: Daniel Lewis
+name: Michael Joseph Rosenthal
 # Info to show in header
-email: daniel.lewis.software.engineer@gmail.com
+email: rosenthalm93@gmail.com
 location: Austin, TX
 # Header introduction / mission statement
-intro: "I'm a software engineer with 5 years professional experience. I'm available for software consulting."
-#for Twitter cards:
-# Removing all proficiencies will remove the section from the resume
+intro: I have been a web developer and operations engineer for more than 7 years, and have expertise with a variety of tools and frameworks at every level of the stack. 
 proficiencies:
   # - list item
-  - Front-end web development
   - Javascript and Typescript
-  - React.js
-  - Rapid prototyping
-  - Low level, native applications
-  - C/C++/Rust
-  - Unity3D
+  - Python
+  - Operations Engineering
+  - Machine Learning
+  - React.js, React Native
+  - Django, Flask, Bottle.py
+  - Amazon Web Services (AWS)
+  - Postgres
+ #- Unix shell scripting
+ #- Docker
+ #- Dart, Flutter
+ #- Software Architecture
+ #- Backend Development
+ #- GraphQL
+ #- API development & design
+ #- CouchDB
+ #- MongoDB
+ #- Node.js
+ #- Clojure
+ #- Java
 # Links to include in header
 links:
-  # text: http://link.com
-  'GitHub': https://github.com/helveticascenario
-  'LinkedIn': https://www.linkedin.com/in/daniel-lewis-7a136545/
+  'GitHub': https://github.com/micimize
+  'LinkedIn': https://www.linkedin.com/in/michaeljosephrosenthal/

@@ -3,7 +3,7 @@
 mixin experience(exp)
   +section
     //- Position
-    h3.f3.mb2.mb0-p.fw6
+    h3.f3.mb2.mb0-p.fw6(id=exp.id)
       if exp.url
         +link(exp.title, exp.url)
       else
@@ -15,12 +15,12 @@ mixin experience(exp)
         li.fw5= exp.subtitle
         //- Time
         li
-          time(datetime=moment.utc(exp.startDate))= moment.utc(exp.startDate).format("MMM YYYY")
-          | &#032;&ndash;&#032;
+          time(datetime=moment.utc(exp.startDate))= moment.utc(exp.startDate).format(exp.dateFormat || "MMM YYYY")
           if exp.endDate
-            time(datetime=moment.utc(exp.endDate))= moment.utc(exp.endDate).format("MMM YYYY")
-          else
-            | Present
+            | &#032;&ndash;&#032;
+            time(datetime=moment.utc(exp.endDate))= moment.utc(exp.endDate).format(exp.dateFormat || "MMM YYYY")
+          else if exp.ongoing
+            | &#032;&ndash;&#032; Present
         //- Location
         if exp.location
           li= exp.location
