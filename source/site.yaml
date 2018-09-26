@@ -1,6 +1,7 @@
 # SEO / <meta> tag information
 title: The Resume of Michael Joseph Rosenthal
 description: Software Engineer
+baseurl: '/resume'
 # theme color for header, borders, section headings
 # For best results, choose a color that has a color ratio of at least 3.5
 # against white. Otherwise, all text etc is set to black to preserve readability
