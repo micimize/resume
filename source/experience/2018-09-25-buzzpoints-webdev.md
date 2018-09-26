@@ -1,7 +1,7 @@
 ---
 published: false
-title: Web Development Intern
-subtitle: BuzzPoints
+title: Web Developer
+subtitle: BuzzPoints, Internship
 url: 'https://www.buzzpoints.com/'
 startDate: '2012-06-01'
 endDate: '2012-12-01'

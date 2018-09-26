@@ -10,4 +10,4 @@ As a contractor, I usually wear multiple hats, often managing AWS deployments, w
 * Dockerized python microservices deployed to AWS
 * A [peerassets crypto wallet](https://peerassets.github.io/chizukeki/) built with react-native
 
-As well as a slew of web applications built with Python and/or Javascript.
+As well as a number of web applications built with Python and/or Javascript.

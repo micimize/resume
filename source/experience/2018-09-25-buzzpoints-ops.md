@@ -1,7 +1,7 @@
 ---
 published: false
-title: Operations Intern
-subtitle: BuzzPoints
+title: Operations Engineer
+subtitle: BuzzPoints, Internship
 url: 'https://www.buzzpoints.com/'
 startDate: '2012-12-01'
 endDate: '2013-12-01'
