@@ -4,9 +4,6 @@
   "version": "0.0.7",
   "description": "A resume generator, built with Metalsmith",
   "main": "build.js",
-  "engines": {
-    "node": "5.9.0"
-  },
   "scripts": {
     "start": "npm run browser_sync & NODE_ENV=development nodemon --exec 'npm run test && npm run build && browser-sync reload'",
     "browser_sync": "browser-sync start --server _build --no-ui --no-notify",
