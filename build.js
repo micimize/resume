@@ -151,7 +151,7 @@ function print () {
   var server = require('browser-sync').create()
 
   server.init({
-    server: '_build',
+    ...require('./dev.config.js'),
     port: 8008,
     open: false,
     ui: false
