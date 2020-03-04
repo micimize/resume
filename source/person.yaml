@@ -3,7 +3,7 @@ name: Michael Joseph Rosenthal
 email: rosenthalm93@gmail.com
 location: Austin, TX
 # Header introduction / mission statement
-intro: I have been a web developer and operations engineer for more than 7 years, and have expertise with a variety of tools and frameworks at every level of the stack.
+intro: I have been a web developer and operations engineer for more than 8 years, and have expertise with a variety of tools and frameworks at every level of the stack.
 proficiencies:
   # - list item
   - Javascript and Typescript
@@ -31,4 +31,5 @@ proficiencies:
 # Links to include in header
 links:
   "GitHub": https://github.com/micimize
+  "StackOverflow": https://stackoverflow.com/users/2234013/micimize?tab=profile
   "LinkedIn": https://www.linkedin.com/in/michaeljosephrosenthal/
