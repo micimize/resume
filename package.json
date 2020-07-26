@@ -17,7 +17,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HelveticaScenario/HelveticaScenario.github.io.git"
-  }, "keywords": [
+  },
+  "keywords": [
     "metalsmith",
     "resume",
     "cv",

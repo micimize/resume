@@ -18,3 +18,22 @@
 @import '_widths';
 @import '_list';
 @import '_columns';
+
+ul, p {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.section_header li {
+  display: inline-block;
+}
+
+.section_header .location {
+  font-size: 0.9rem;
+  font-weight: 500;
+  /* color: grey; */
+}
+
+.section_header .duration {
+  float: right;
+}
