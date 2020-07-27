@@ -12,8 +12,21 @@ body.bg-white.bg-light-gray-page.bg-white-p.dark-gray(class= process.env.NODE_EN
   article.mw-page.mv-5-page.center.ma0-p.shadow-2-page.lh-title
     include partials/header
 
-    main.pa4.bg-white
+    main.pv3.ph4.bg-white
       block content
+
+        if person.intro
+          section.cf.mb4.mb3-ns.mb3-p.ph3
+            =person.intro
+
+        if person.proficiencies
+          +section-title('Proficiencies')
+          +section
+            ul.list.ph3
+              each items, category in person.proficiencies
+                li
+                  b= category + ': '
+                  span= items.join(', ')
 
         if site.jobs > 0
           +section-title
@@ -28,25 +41,17 @@ body.bg-white.bg-light-gray-page.bg-white-p.dark-gray(class= process.env.NODE_EN
             +accent-link('Education', '/resume/education')
           +section
             - for (var i = 0; i < site.schools; i++)
-              - if (collections.education[i])
-                +experience(collections.education[i])
-
-        if site.projects > 0
-          +section-title
-            +accent-link('Projects', '/resume/projects')
-          +section
-            - for (var i = 0; i < site.projects; i++)
-              - if (collections.projects[i])
-                +experience(collections.projects[i])
-
-        if person.proficiencies
-          +section
-            +left-column
-              +section-title('Proficiencies')
-            +right-column
-              ul.cc2-ns.cg3-ns.cc2-p.cg3-p.pl0.mt3.mt0-ns.mt0-p.list-inside-ns.list-inside-p
-                each skill in person.proficiencies
-                  li= skill
+              - var edu = collections.education[i]
+              - if (edu && edu.published)
+                +small_experience(edu)
+        //-
+          if site.projects > 0
+            +section-title
+              +accent-link('Projects', '/resume/projects')
+            +section
+              - for (var i = 0; i < site.projects; i++)
+                - if (collections.projects[i])
+                  +experience(collections.projects[i])
 
         if person.email && site.references
           +footer

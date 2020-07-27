@@ -37,3 +37,20 @@ ul, p {
 .section_header .duration {
   float: right;
 }
+
+header {
+  text-align: center;
+}
+
+.header_items, .header_items > li {
+  display: inline-block;
+}
+
+.bump_down {
+  margin-bottom: -0.1rem;
+}
+
+.section_title {
+  border-bottom: 1px solid;
+}
+

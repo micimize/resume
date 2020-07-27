@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Fullstack Developer
 subtitle: Various Contracts
 url: "https://www.upwork.com/freelancers/~0124213f9bdcdc262b"

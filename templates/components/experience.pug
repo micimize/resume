@@ -34,3 +34,42 @@ mixin experience(exp)
     if exp.contents
       div.contents.mb2
         != exp.contents
+
+
+
+//- Experiences are the molecular unit of the resume. They are what the markdown
+    files in the source directory compile in to.
+mixin small_experience(exp)
+  +section
+    //- Metadata
+    ul.section_header.list.ml0.pl0.f5.mt1.fw2.mb0
+      li
+        //- Position
+        h3.title.f5.fw5(id=exp.id)
+          if exp.url
+            +link(exp.title, exp.url)
+          else
+            = exp.title
+      //- Time
+      li.duration.f6.b.tr
+        time(datetime=moment.utc(exp.startDate))= moment.utc(exp.startDate).format(exp.dateFormat || "MMM YYYY")
+        if exp.endDate
+          | &#032;&ndash;&#032;
+          time(datetime=moment.utc(exp.endDate))= moment.utc(exp.endDate).format(exp.dateFormat || "MMM YYYY")
+        else if exp.ongoing
+          | &#032;&ndash;&#032; Present
+
+    if exp.subtitle
+      ul.section_header.list.ml0.pl0.f5.mt0.fw2.mb0
+        //- Place of Work
+        li.i-l.f6.mb2.mb0-p.fw6.subtitle= exp.subtitle
+        //- Location
+        if exp.location
+          | ;
+          li.location
+            = exp.location
+
+    //- Contents
+    if exp.contents
+      div.contents
+        != exp.contents

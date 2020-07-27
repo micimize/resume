@@ -1,17 +1,20 @@
-header.pa4.bg-accent.bg-accent-text(class=site.printstyles ? 'dark-gray-p bg-white-p pb0-p' : '')
-  h1.f2.f1-ns.mb1: a.link.bg-accent-text(href="/resume/", class=site.printstyles ? 'dark-gray-p' : '')!= person.name
+- var l = person.links
+
+header.pv3.ph4.bg-accent.bg-accent-text(class=site.printstyles ? 'dark-gray-p bg-white-p pb0-p' : '')
+  h1.f3.mb1: a.link.bg-accent-text(href="/resume/", class=site.printstyles ? 'dark-gray-p' : '')!= person.name
   .cf
-    +left-column
-      ul.list.ml0.pl0.mb2.mb0-ns.f5
-        if person.phone
-          li= person.phone
-        if person.location
-          li= person.location
-        if person.links
-          each value, index in person.links
-            li: +header-link(index, value)
-        if person.email
-          li: +header-link(person.email, 'mailto:' + person.email)
-    +right-column
-      if person.intro
-        p.measure.mt0.f5!= person.intro
+    ul.header_items.list.ml0.pl0.mb2.mb0-ns.f5
+      li
+        +header-link(person.email, 'mailto:' + person.email)
+        = ' • '
+        = person.location
+      li
+        +b-header-link(l.linkedin.text, l.linkedin.url)
+          +icon(linkedin_icon).dib.h1.w1.ml1.mr1.bump_down
+      li
+        +b-header-link(l.gh.text, l.gh.url)
+          +icon(gh_icon).dib.h1.w1.mr1.bump_down
+      li
+        +b-header-link(l.so.text, l.so.url)
+          +icon(so_icon).dib.h1.w1.ml1.mr1.bump_down
+
