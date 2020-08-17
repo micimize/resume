@@ -43,12 +43,10 @@ body.bg-white.bg-light-gray-page.bg-white-p.dark-gray(class= process.env.NODE_EN
             for exp in collections.education
               if (exp && exp.published)
                 +small_experience(exp)
-
         //-
           p
             br
             br
-
         if site.projects > 0
           +section-title
             +accent-link('Open Source Projects', '/resume/projects')
