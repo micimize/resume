@@ -27,31 +27,35 @@ body.bg-white.bg-light-gray-page.bg-white-p.dark-gray(class= process.env.NODE_EN
                 li
                   b= category + ': '
                   span= items.join(', ')
-
+  
         if site.jobs > 0
           +section-title
             +accent-link('Experience', '/resume/experience')
-          +section
-            - for (var i = 0; i < site.jobs; i++)
-              - if (collections.experience[i])
-                +experience(collections.experience[i])
+          +main-section
+            for exp in collections.experience
+              if (exp && exp.published)
+                +experience(exp)
 
         if site.schools > 0
           +section-title
             +accent-link('Education', '/resume/education')
-          +section
-            - for (var i = 0; i < site.schools; i++)
-              - var edu = collections.education[i]
-              - if (edu && edu.published)
-                +small_experience(edu)
+          +main-section
+            for exp in collections.education
+              if (exp && exp.published)
+                +small_experience(exp)
+
         //-
-          if site.projects > 0
-            +section-title
-              +accent-link('Projects', '/resume/projects')
-            +section
-              - for (var i = 0; i < site.projects; i++)
-                - if (collections.projects[i])
-                  +experience(collections.projects[i])
+          p
+            br
+            br
+
+        if site.projects > 0
+          +section-title
+            +accent-link('Open Source Projects', '/resume/projects')
+          +main-section
+            for exp in collections.projects
+              if (exp && exp.published)
+                +experience(exp)
 
         if person.email && site.references
           footer

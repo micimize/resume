@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: type-quotes
 url: 'https://github.com/micimize/type-quotes'
 startDate: '2013-12-31'

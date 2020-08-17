@@ -3,15 +3,25 @@ extends default
 block content
 
   +section-title(title)
+
+  if contents
+    div.contents.mb1
+      != contents
+
   if title == 'Experience'
-    for job in collections.experience
-      +experience(job)
+    for exp in collections.experience
+      if exp && exp.published
+        +experience(exp)
+
   else if title == 'Education'
-    for school in collections.education
-      +experience(school)
+    for exp in collections.education
+      if exp && exp.published
+        +experience(exp)
+
   else if title == 'Projects'
-    for project in collections.projects
-      +experience(project)
+    for exp in collections.projects
+      if exp && exp.published
+        +experience(exp)
 
   +footer
     p: +link('Back to Full Resume', '/resume/')

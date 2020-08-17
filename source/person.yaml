@@ -3,7 +3,7 @@ name: Michael Joseph Rosenthal
 email: rosenthalm93@gmail.com
 location: Austin, TX
 # Header introduction / mission statement
-intro: I have been a Software Engineer for more than 8 years, and have expertise with a variety of tools and frameworks at every level of the stack.
+intro: I am a Software Engineer with over 8 years of experience and expertise at every level of the stack.
 proficiencies:
   Skills:
     - Machine Learning
@@ -16,7 +16,7 @@ proficiencies:
     - PL/pgSQL
     - Typescript
     - Javascript
-    - shell scripting
+    - bash
     - GraphQL
   Frameworks:
     - fast.ai
@@ -25,6 +25,8 @@ proficiencies:
     - Django
     - Flask
     - React
+    - AWS
+    - GCP
   Interests:
     - Machine Learning Self Study
     - Meditation
