@@ -157,10 +157,17 @@ function print () {
     ui: false
   })
 
-  pdf.create(html, options).toFile('resume.pdf', function (err, res) {
+  pdf.create(pBreaks(html), options).toFile('resume.pdf', function (err, res) {
     if (err) return console.log(err)
     server.exit()
     console.log('\nPDF generation complete!\n')
     process.exit()
   })
+}
+
+function pBreaks(html){
+  ['p', 'br', '/p'].forEach(tag => {
+    html = html.split(`<!--PRINT_${tag}-->`).join(`<${tag}>`)
+  });
+  return html
 }
